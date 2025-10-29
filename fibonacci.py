@@ -23,7 +23,7 @@ def fibonacci(n):
         ValueError: If n is negative
         TypeError: If n is not an integer
     """
-    if not isinstance(n, int):
+    if not isinstance(n, int) or isinstance(n, bool):
         raise TypeError("n must be an integer")
     
     if n < 0:

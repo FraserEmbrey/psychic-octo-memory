@@ -46,6 +46,10 @@ class TestFibonacci(unittest.TestCase):
             fibonacci("5")
         with self.assertRaises(TypeError):
             fibonacci(None)
+        with self.assertRaises(TypeError):
+            fibonacci(True)
+        with self.assertRaises(TypeError):
+            fibonacci(False)
 
 
 if __name__ == "__main__":
